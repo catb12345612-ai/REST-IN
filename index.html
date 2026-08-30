@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Us 5 Stars</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #f8f9fa;
+            color: #202124;
+            text-align: center;
+            padding: 15px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            background: #ffffff;
+            padding: 20px 15px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            max-width: 440px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        h1 { font-size: 20px; color: #1a73e8; margin-top: 0; margin-bottom: 5px; }
+        p { color: #5f6368; font-size: 13px; margin-bottom: 15px; line-height: 1.4; }
+        .scroll-container {
+            max-height: 400px;
+            overflow-y: auto;
+            text-align: left;
+            padding-right: 5px;
+            margin-bottom: 15px;
+        }
+        .review-option {
+            background: #f1f3f4;
+            padding: 12px 14px;
+            border-radius: 8px;
+            color: #3c4043;
+            margin-bottom: 12px;
+            border-left: 4px solid #1a73e8;
+            font-size: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .review-text {
+            line-height: 1.4;
+        }
+        .btn {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            font-size: 11px;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            align-self: flex-end;
+        }
+        .success {
+            color: #137333;
+            font-size: 13px;
+            margin-top: 10px;
+            display: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Rate Us ⭐⭐⭐⭐⭐</h1>
+        <p>Choose a detailed review below, tap copy & open Google:</p>
+        
+        <div class="scroll-container">
+            <div class="review-option">
+                <span class="review-text">"An absolute gem in Khammam! The food quality is consistently top-notch, and every dish we ordered tasted authentic and fresh. Great hospitality too."</span>
+                <button class="btn" onclick="copyAndOpen(this)">Copy & Open</button>
+            </div>
+
+            <div class="review-option">
+                <span class="review-text">"One of the best dining experiences in town. The ambience is peaceful, clean, and well-maintained, making it a wonderful spot for family dinners."</span>
+                <button class="btn" onclick="copyAndOpen(this)">Copy & Open</button>
+            </div>
+
+            <div class="review-option">
+                <span class="review-text">"The service is exceptionally fast and polite. The staff makes sure you are comfortable and attended to throughout your meal. Highly recommended!"</span>
+                <button class="btn" onclick="copyAndOpen(this)">Copy & Open</button>
+            </div>
+
+            <div class="review-option">
+                <span class="review-text">"Fantastic flavors and generous portion sizes. You truly get great value for your money here compared to other restaurants in the area."</span>
+                <button class="btn" onclick="copyAndOpen(this)">Copy & Open</button>
+            </div>
+
+            <div class="review-option">
+                <span class="review-text">"The interior vibe and seating arrangement are so cozy and modern. It's become our go-to restaurant for weekend celebrations and gatherings."</span>
+                <button class="btn" onclick="copyAndOpen(this)">Copy & Open</button>
+            </div>
+
+            <div class="review-option">
+                <span class="review-text">"Every single item we tried—from starters to main course—was cooked to perfection. The chefs here really know how to balance their spices."</span>
+                <button class="btn" onclick="copyAndOpen(this)">Copy & Open</button>
+            </div>
+
+            <div class="review-option">
+                <span class="review-text">"Impeccable hygiene standards. The tables, dining hall, and kitchen areas are kept remarkably clean, which gives complete peace of mind."</span>
+                <button class="btn" onclick="copyAndOpen(this)">Copy & Open</button>
+            </div>
+
+            <div class="review-option">
+                <span class="review-text">"The management and staff are extremely courteous. They handled our large group booking smoothly without any delays in service."</span>
+                <button class="btn" onclick="copyAndOpen(this)">Copy & Open</button>
+            </div>
+
+            <div class="review-option">
+                <span class="review-text">"Mouth-watering food with a rich aroma that hits you the moment you walk in. A must-visit culinary destination in Khammam!"</span>
+                <button class="btn" onclick="copyAndOpen(this)">Copy & Open</button>
+            </div>
+
+            <div class="review-option">
+                <span class="review-text">"Parking is convenient, the welcome is warm, and the food is consistently delicious. Five stars well deserved for their overall service."</span>
+                <button class="btn" onclick="copyAndOpen(this)">Copy & Open</button>
+            </div>
+
+            <div class="review-option">
+                <span class="review-text">"The special dishes on their menu are absolute standouts. Rich taste, fresh ingredients, and cooked right on point every single time."</span>
+                <button class="btn" onclick="copyAndOpen(this)">Copy & Open</button>
+            </div>
+
+            <div class="review-option">
+                <span class="review-text">"Wonderful lighting and a pleasant background atmosphere make dining here a very relaxing experience after a long busy day."</span>
+                <button class="btn" onclick="copyAndOpen(this)">Copy & Open</button>
+            </div>
+
+            <div class="review-option">
+                <span class="review-text">"Prompt service even during peak weekend rush hours. The kitchen team works efficiently to get your food served hot and fresh."</span>
+                <button class="btn" onclick="copyAndOpen(this)">Copy & Open</button>
+            </div>
+
+            <div class="review-option">
+                <span class="review-text">"The appetizers were crispy and flavorful, followed by a deeply satisfying main course. Truly a delightful feast for food lovers."</span>
+                <button class="btn" onclick="copyAndOpen(this)">Copy & Open</button>
+            </div>
+
+            <div class="review-option">
+                <span class="review-text">"Very professional hotel management and hospitable crew. They take customer feedback seriously and ensure top-tier quality."</span>
+                <button class="btn" onclick="copyAndOpen(this)">Copy & Open</button>
+            </div>
+
+            <div class="review-option">
+                <span class="review-text">"Clean restrooms, well-arranged seating booths, and friendly waiters. Every detail of this hotel is thoughtfully managed."</span>
+                <button class="btn" onclick="copyAndOpen(this)">Copy & Open</button>
+            </div>
+
+            <div class="review-option">
+                <span class="review-text">"The desserts and beverages were the perfect sweet ending to an already fantastic meal. Will definitely return with friends!"</span>
+                <button class="btn" onclick="copyAndOpen(this)">Copy & Open</button>
+            </div>
+
+            <div class="review-option">
+                <span class="review-text">"Outstanding food presentation and brilliant taste. It easily stands out as one of the finest eating spots in Khammam."</span>
+                <button class="btn" onclick="copyAndOpen(this)">Copy & Open</button>
+            </div>
+
+            <div class="review-option">
+                <span class="review-text">"Cozy environment, polite attendants, and delicious food that keeps you coming back for more. Highly recommend this hotel!"</span>
+                <button class="btn" onclick="copyAndOpen(this)">Copy & Open</button>
+            </div>
+
+            <div class="review-option">
+                <span class="review-text">"Superb quality from start to finish. The entire team goes above and beyond to provide a memorable dining experience."</span>
+                <button class="btn" onclick="copyAndOpen(this)">Copy & Open</button>
+            </div>
+        </div>
+
+        <div class="success" id="successMsg">✓ Copied! Redirecting to Google...</div>
+    </div>
+
+    <script>
+        function copyAndOpen(button) {
+            const text = button.previousElementSibling.innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                document.getElementById("successMsg").style.display = "block";
+                setTimeout(() => {
+                    // PASTE YOUR LONG GOOGLE MAPS LINK HERE INSIDE THE QUOTES
+                    window.location.href = "<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3567.085894443712!2d80.15807989999999!3d17.258353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3459c71f3d4edd%3A0xa566924a067429e1!2sREST%20INN%20HOTEL!5e1!3m2!1sen!2sin!4v1788119995120!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>";
+                }, 600);
+            });
+        }
+    </script>
+</body>
+</html>
